@@ -1,0 +1,20 @@
+theme: light
+
+sorting: order # alphabetical | order | random
+
+social-media:
+  - github: https://github.com/Safi1012
+  - twitter: https://twitter.com/safi1012
+
+projects:
+  - name: Shrink Me
+    url: https://shrinkme.app
+    image:
+      icon: https://shrinkme.app/favicon/favicon-196x196.png
+      background-color: #ff0000
+    
+  - name: Bitcoin
+    url: https://github.com/Safi1012/bitcoin
+    image:
+      icon: https://raw.githubusercontent.com/Safi1012/bitcoin/master/bitcoin/Assets.xcassets/AppIcon.appiconset/app-icon%40120x120.png
+      background-color:
