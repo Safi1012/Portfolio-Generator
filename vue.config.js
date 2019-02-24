@@ -1,12 +1,12 @@
 module.exports = {
   chainWebpack: config => {
     config.module
-      .rule("yml")
+      .rule('yml')
       .test(/\.yml$/)
-      .use("json-loader")
-      .loader("json-loader")
+      .use('json-loader')
+      .loader('json-loader')
       .end()
-      .use("yaml-loader")
-      .loader("yaml-loader");
+      .use('yaml-loader')
+      .loader('yaml-loader');
   }
 };

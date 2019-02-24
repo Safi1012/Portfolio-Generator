@@ -1,6 +1,6 @@
-import Vue from "vue";
-import Vuex from "vuex";
-const config = require("./config/setup.yml");
+import Vue from 'vue';
+import Vuex from 'vuex';
+const config = require('./config/setup.yml');
 
 Vue.use(Vuex);
 

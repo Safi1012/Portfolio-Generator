@@ -5,7 +5,7 @@
       For a guide and recipes on how to configure / customize this project,<br />
       check out the
       <a href="https://cli.vuejs.org" target="_blank" rel="noopener"
-        >vue-cli documentation</a
+      >vue-cli documentation</a
       >.
     </p>
     <h3>Installed CLI Plugins</h3>
@@ -15,7 +15,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"
           target="_blank"
           rel="noopener"
-          >babel</a
+        >babel</a
         >
       </li>
       <li>
@@ -23,7 +23,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-typescript"
           target="_blank"
           rel="noopener"
-          >typescript</a
+        >typescript</a
         >
       </li>
       <li>
@@ -31,7 +31,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-pwa"
           target="_blank"
           rel="noopener"
-          >pwa</a
+        >pwa</a
         >
       </li>
       <li>
@@ -39,7 +39,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint"
           target="_blank"
           rel="noopener"
-          >eslint</a
+        >eslint</a
         >
       </li>
       <li>
@@ -47,7 +47,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-unit-jest"
           target="_blank"
           rel="noopener"
-          >unit-jest</a
+        >unit-jest</a
         >
       </li>
       <li>
@@ -55,7 +55,7 @@
           href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-e2e-cypress"
           target="_blank"
           rel="noopener"
-          >e2e-cypress</a
+        >e2e-cypress</a
         >
       </li>
     </ul>
@@ -66,17 +66,17 @@
       </li>
       <li>
         <a href="https://forum.vuejs.org" target="_blank" rel="noopener"
-          >Forum</a
+        >Forum</a
         >
       </li>
       <li>
         <a href="https://chat.vuejs.org" target="_blank" rel="noopener"
-          >Community Chat</a
+        >Community Chat</a
         >
       </li>
       <li>
         <a href="https://twitter.com/vuejs" target="_blank" rel="noopener"
-          >Twitter</a
+        >Twitter</a
         >
       </li>
       <li>
@@ -87,7 +87,7 @@
     <ul>
       <li>
         <a href="https://router.vuejs.org" target="_blank" rel="noopener"
-          >vue-router</a
+        >vue-router</a
         >
       </li>
       <li>
@@ -98,12 +98,12 @@
           href="https://github.com/vuejs/vue-devtools#vue-devtools"
           target="_blank"
           rel="noopener"
-          >vue-devtools</a
+        >vue-devtools</a
         >
       </li>
       <li>
         <a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"
-          >vue-loader</a
+        >vue-loader</a
         >
       </li>
       <li>
@@ -111,7 +111,7 @@
           href="https://github.com/vuejs/awesome-vue"
           target="_blank"
           rel="noopener"
-          >awesome-vue</a
+        >awesome-vue</a
         >
       </li>
     </ul>
@@ -119,12 +119,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+  import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component
-export default class HelloWorld extends Vue {
+  export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
-}
+  }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
