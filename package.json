@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "npm run svg && vue-cli-service serve",
+    "build": "npm run svg && vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "svg": "vsvg -s ./src/assets/icons -t ./src/components/icons --ext ts --es6"
   },
   "dependencies": {
     "register-service-worker": "^1.5.2",
@@ -15,6 +16,7 @@
     "vue-class-component": "^6.0.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
+    "vue-svgicon": "^3.2.6",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
