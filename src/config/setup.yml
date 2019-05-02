@@ -2,9 +2,14 @@ theme: light
 
 sorting: order # alphabetical | order | random
 
-social-media:
-  - github: https://github.com/Safi1012
-  - twitter: https://twitter.com/safi1012
+socialMedia:
+  - name: GitHub
+    url: https://github.com/Safi1012
+    icon: 'github'
+
+  - name: Twitter
+    url: https://twitter.com/Safi1012
+    icon: 'twitter'
 
 projects:
   - name: Shrink Me

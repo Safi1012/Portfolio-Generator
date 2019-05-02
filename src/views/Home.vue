@@ -1,8 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
-    <ThemeProvider />
+    <Header />
   </div>
 </template>
 
@@ -10,10 +8,12 @@
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
   import HelloWorld from '@/components/HelloWorld.vue';
+  import Header from '@/components/Header.vue';
 
 @Component({
   components: {
-    HelloWorld
+    HelloWorld,
+    Header
   }
 })
   export default class Home extends Vue {}
