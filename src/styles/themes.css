@@ -1,0 +1,21 @@
+.light-theme {
+  --primary-color-light: #D6F2FF;
+  --primary-color: #2BB0ED;
+  --primary-color-dark: #127FBF;
+
+  --secondary-color: #FAFAFA;
+
+  --text-color-light: #C7BDBD;
+  --text-color-dark: #222222;
+}
+
+.dark-theme {
+  --primary-color-light: #979292;
+  --primary-color: #515151;
+  --primary-color-dark: #333333;
+
+  --secondary-color: #FAFAFA;
+
+  --text-color-light: #7E7E7E;
+  --text-color-dark: #222222;
+}

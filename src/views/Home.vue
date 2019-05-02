@@ -6,15 +6,14 @@
   </div>
 </template>
 
+
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
   import HelloWorld from '@/components/HelloWorld.vue';
-  import ThemeProvider from '@/components/ThemeProvider.vue';
 
 @Component({
   components: {
-    HelloWorld,
-    ThemeProvider
+    HelloWorld
   }
 })
   export default class Home extends Vue {}
