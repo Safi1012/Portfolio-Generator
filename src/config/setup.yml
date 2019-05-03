@@ -5,21 +5,19 @@ sorting: order # alphabetical | order | random
 socialMedia:
   - name: GitHub
     url: https://github.com/Safi1012
-    icon: 'github'
+    icon: assets/icons/social-media/github.svg
 
   - name: Twitter
     url: https://twitter.com/Safi1012
-    icon: 'twitter'
+    icon: assets/icons/social-media/twitter.svg
 
 projects:
   - name: Shrink Me
     url: https://shrinkme.app
-    image:
-      icon: https://shrinkme.app/favicon/favicon-196x196.png
-      background-color: #ff0000
+    icon: assets/icons/projects/shrink-me.svg
+    background-color: #48bfcd
     
   - name: Bitcoin
     url: https://github.com/Safi1012/bitcoin
-    image:
-      icon: https://raw.githubusercontent.com/Safi1012/bitcoin/master/bitcoin/Assets.xcassets/AppIcon.appiconset/app-icon%40120x120.png
-      background-color:
+    icon: assets/icons/projects/bitcoin.png
+    background-color:
