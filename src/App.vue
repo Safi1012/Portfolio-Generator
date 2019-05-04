@@ -34,6 +34,11 @@
 <style lang="scss">
   @import './styles/themes.css';
 
+  * {
+    font-family: var(--primary-font-family);
+    font-weight: var(--primary-font-weight);
+  }
+
   body {
     margin: 0;
   }

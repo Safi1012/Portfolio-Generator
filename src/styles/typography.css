@@ -1,0 +1,53 @@
+/* lato-300 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/lato/lato-300.eot'); /* IE9 Compat Modes */
+  src: local('Lato Light'), local('Lato-Light'),
+      url('../assets/fonts/lato/lato-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../assets/fonts/lato/lato-300.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../assets/fonts/lato/lato-300.woff') format('woff'), /* Modern Browsers */
+      url('../assets/fonts/lato/lato-300.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../assets/fonts/lato/lato-300.svg#Lato') format('svg'); /* Legacy iOS */
+}
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/lato/lato-700.eot'); /* IE9 Compat Modes */
+  src: local('Lato Bold'), local('Lato-Bold'),
+      url('../assets/fonts/lato/lato-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../assets/fonts/lato/lato-700.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../assets/fonts/lato/lato-700.woff') format('woff'), /* Modern Browsers */
+      url('../assets/fonts/lato/lato-700.ttf') format('truetype'), /* Safari, Android, iOS */
+      url('../assets/fonts/lato/lato-700.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+/* playfair-display-regular - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/playfair-display/playfair-display-400.eot'); /* IE9 Compat Modes */
+  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
+       url('../assets/fonts/playfair-display/playfair-display-400.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/playfair-display/playfair-display-400.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/playfair-display/playfair-display-400.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/playfair-display/playfair-display-400.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/playfair-display/playfair-display-400.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+/* playfair-display-700 - latin */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/playfair-display/playfair-display-700.eot'); /* IE9 Compat Modes */
+  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+       url('../assets/fonts/playfair-display/playfair-display-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/fonts/playfair-display/playfair-display-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/fonts/playfair-display/playfair-display-700.woff') format('woff'), /* Modern Browsers */
+       url('../assets/fonts/playfair-display/playfair-display-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/fonts/playfair-display/playfair-display-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
