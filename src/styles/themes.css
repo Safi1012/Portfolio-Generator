@@ -4,14 +4,14 @@
   --primary-color: #2BB0ED;
   --primary-color-dark: #127FBF;
   --secondary-color: #FAFAFA;
-  --text-color-light: #C7BDBD;
-  --text-color-dark: #222222;
+  --text-color-light: #c7bdbd;
+  --text-color-dark: #555;
 
   /* fonts */
   --primary-font-family: 'Lato', sans-serif;
   --primary-font-weight: 300;
   --secondary-font-family: 'Lato', sans-serif;
-  --secondary-font-weight: 300;
+  --secondary-font-weight: 700;
 }
 
 

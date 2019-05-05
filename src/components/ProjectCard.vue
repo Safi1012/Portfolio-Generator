@@ -1,9 +1,10 @@
 <template>
-  <div>
-    <section v-for="(project, index) in projects" :key="index">
-      <img :src="project['icon']" :alt="`${project['name']} icon`" />
-      <h1>{{project['name']}}</h1>
-    </section>
+  <div class="project-card">
+
+    <a :href="url" target="_blank" rel="noopener nofollow">
+      <img :src="iconPath" :alt="`${projectName} icon`" :style="{ 'background-color': backgroundColor }" />
+    </a>
+    <p>{{this.projectName}}</p>
   </div>
 </template>
 
@@ -13,34 +14,54 @@
   import { mapState } from 'vuex'
 
   @Component({
+    props: {
+      url: String,
+      iconPath: String,
+      projectName: String,
+      backgroundColor: String
+    },
     computed: mapState([
-      'projects',
+      'projects'
     ]),
   })
-  export default class ProjectCard extends Vue {
-    public projects!: string;
-
-    mounted() {
-      console.log('ProjectCard Mount: ', this.projects);
-    }
-  }
+  export default class ProjectCard extends Vue {}
 </script>
 
 
 <style lang="scss" scoped>
-  section {
-    display: inline-block;
-    background-color: lightgreen;
-    margin: 4rem;
+  .project-card {
+    width: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;    
   }
 
   img {
-    background-color: lightblue;
-    width: 4rem;
-    height: 4rem;
+    display: inline-flex;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+  img:hover {
+      box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
   }
 
   h1 {
     font-size: 1rem;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: var(--secondary-font-weight);
+    color: var(--text-color-dark);
+  }
+
+  a {
+    text-decoration: none;
   }
 </style>
