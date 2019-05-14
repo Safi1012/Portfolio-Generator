@@ -44,9 +44,13 @@
 <style lang="scss" scoped>
   ul {
     display: flex;
+    position: fixed;
     justify-content: space-between;
-    margin: 0 0.5rem;
+    width: 100vw;
+    background-color: var(--secondary-color);
+    margin: 0;
     padding: 0;
+    top: 0;
   }
 
   li {

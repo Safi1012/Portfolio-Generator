@@ -49,19 +49,26 @@
 
 
 <style lang="scss" scoped>
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin: 1rem;
+    margin-top: 70px;
+  }
+
   h1 {
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 4rem;
   }
 
-  .dashboard {
-    margin: 1rem;
-  }
-
   .grid {
     display: flex;
-    justify-content: space-evenly; // flex-start
+    justify-content: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
   }
 </style>
