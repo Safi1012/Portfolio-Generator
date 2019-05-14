@@ -17,9 +17,19 @@ projects:
   - name: Shrink Me
     url: https://shrinkme.app
     icon: assets/icons/projects/shrink-me.svg
-    backgroundColor: #48bfcd
-    
+    backgroundColor:
+
   - name: Bitcoin
     url: https://github.com/Safi1012/bitcoin
     icon: assets/icons/projects/bitcoin.png
     backgroundColor:
+
+  - name: Snake
+    url: https://github.com/Safi1012/bitcoin
+    icon: assets/icons/projects/responsive-snake.png
+    backgroundColor:
+
+  - name: About Me
+    url: https://github.com/Safi1012/filipesantoscorrea.com
+    icon: assets/icons/projects/about-me.svg
+    backgroundColor: \#e7f5ff
