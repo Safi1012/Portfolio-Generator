@@ -1,8 +1,8 @@
 <template>
   <div class="project-card">
 
-    <a :href="url" target="_blank" rel="noopener nofollow">
-      <img :src="iconPath" :alt="`${projectName} icon`" :style="{ 'background-color': backgroundColor }" />
+    <a :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
+      <img :src="iconPath" :alt="`${projectName} icon`" />
     </a>
     <p>{{this.projectName}}</p>
   </div>
@@ -24,7 +24,11 @@
       'projects'
     ]),
   })
-  export default class ProjectCard extends Vue {}
+  export default class ProjectCard extends Vue {
+    get computedBackgroundColor() {
+      return this.$props.backgroundColor ? this.$props.backgroundColor.replace('\\', '') : this.$props.backgroundColor;
+    }
+  }
 </script>
 
 
@@ -47,7 +51,7 @@
   }
 
   img:hover {
-      box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
   }
 
   h1 {
@@ -63,5 +67,8 @@
 
   a {
     text-decoration: none;
+    border-radius: 1rem;
+    width: 6rem;
+    height: 6rem;
   }
 </style>
