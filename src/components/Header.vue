@@ -9,8 +9,7 @@
     <div>
       <li v-for="(social, index) in socialMedia" :key="index">
         <a :href="social['url']" target="_blank" rel="noopener nofollow">
-          <div v-if="isFileExtensionSVG(social['icon'])" class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['icon']) }" />
-          <img v-else :src="social['icon']" :alt="`${social['name']} icon`" />
+          <div class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['name']) }" />
         </a>
       </li>
     </div>
@@ -34,8 +33,8 @@
       return path.indexOf('.svg') === path.length - 4
     }
 
-    getCSSImageURL(path: string) {
-      return `url(${path})`
+    getCSSImageURL(svgName: string) {
+      return `url(assets/icons/social-media/${svgName.toLowerCase()}.svg`
     }
   }
 </script>

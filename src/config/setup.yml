@@ -7,11 +7,9 @@ sorting: order # alphabetical | order | random
 socialMedia:
   - name: GitHub
     url: https://github.com/Safi1012
-    icon: assets/icons/social-media/github.svg
 
   - name: Twitter
     url: https://twitter.com/Safi1012
-    icon: assets/icons/social-media/twitter.svg
 
 projects:
   - name: Shrink Me
