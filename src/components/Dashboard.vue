@@ -70,5 +70,26 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 650px;
+  }
+
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+
+    .grid {
+      max-width: 750px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    .grid {
+      max-width: 850px;
+    }
   }
 </style>

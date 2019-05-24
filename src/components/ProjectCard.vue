@@ -34,7 +34,7 @@
 
 <style lang="scss" scoped>
   .project-card {
-    width: 8rem;
+    width: 9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,5 +70,33 @@
     border-radius: 1rem;
     width: 6rem;
     height: 6rem;
+  }
+
+  @media (min-width: 620px) {
+    .project-card {
+      width: 8.5rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .project-card {
+      width: 9.5rem;
+    }
+
+    img, a {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+
+  @media (min-width: 1600px) {
+    .project-card {
+      width: 10rem;
+    }
+
+    img, a {
+      width: 7rem;
+      height: 7rem;
+    }
   }
 </style>
