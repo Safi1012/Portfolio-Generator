@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Particles />
     <router-view />
   </div>
 </template>
@@ -7,9 +8,14 @@
 
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
-  import { mapState, mapGetters } from 'vuex'
+  import { mapState, mapGetters } from 'vuex';
+  import Particles from '@/components/Particles.vue';
+
 
   @Component({
+    components: {
+      Particles
+    },
     computed: mapState([
       'theme',
     ]),
