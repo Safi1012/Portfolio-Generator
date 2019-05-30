@@ -63,6 +63,7 @@
     color: var(--primary-color);
     font-size: 2rem;
     margin-bottom: 4rem;
+    z-index: 2;
   }
 
   .grid {
@@ -71,6 +72,7 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 650px;
+    z-index: 2;
   }
 
   @media (min-width: 992px) {

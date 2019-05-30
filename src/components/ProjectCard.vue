@@ -26,7 +26,7 @@
   })
   export default class ProjectCard extends Vue {
     get computedBackgroundColor() {
-      return this.$props.backgroundColor ? this.$props.backgroundColor.replace('\\', '') : this.$props.backgroundColor;
+      return this.$props.backgroundColor ? this.$props.backgroundColor.replace('\\', '') : 'white';
     }
   }
 </script>
@@ -38,7 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.5rem;    
+    margin-bottom: 1.5rem;
   }
 
   img {
