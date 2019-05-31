@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Particles />
+    <!-- <Particles /> -->
     <router-view />
   </div>
 </template>
@@ -10,7 +10,6 @@
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { mapState, mapGetters } from 'vuex';
   import Particles from '@/components/Particles.vue';
-
 
   @Component({
     components: {
@@ -24,14 +23,7 @@
     public theme!: string;
     
     mounted() {
-      // refactor to own method w/ a switch button
-      if (document.body.classList.contains('light-theme')) {
-        document.body.classList.remove('light-theme');
-        document.body.classList.add('dark-theme');
-      } else {
-        document.body.classList.remove('dark-theme');
-        document.body.classList.add('light-theme');
-      }
+      document.body.classList.add(this.theme);
     }
   }
 </script>

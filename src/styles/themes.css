@@ -1,4 +1,4 @@
-.light-theme {
+.light {
   /* colors */
   --primary-color-light: #D6F2FF;
   --primary-color: #2BB0ED;
@@ -15,12 +15,12 @@
 }
 
 
-.dark-theme {
+.dark {
   /* colors */
   --primary-color-light: #979292;
   --primary-color: #515151;
   --primary-color-dark: #333333;
-  --secondary-color: #FAFAFA;
+  --secondary-color: #333333;
   --text-color-light: #7E7E7E;
   --text-color-dark: #222222;
 

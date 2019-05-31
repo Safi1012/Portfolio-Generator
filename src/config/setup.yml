@@ -28,4 +28,4 @@ projects:
   - name: About Me
     url: https://github.com/Safi1012/filipesantoscorrea.com
     icon: assets/icons/projects/about-me.svg
-    backgroundColor: \#e7f5ff
+    backgroundColor:
