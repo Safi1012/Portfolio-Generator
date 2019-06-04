@@ -61,6 +61,7 @@
   p {
     text-align: center;
     margin-top: 0.5rem;
+    font-family: var(--secondary-font-family);
     font-weight: var(--secondary-font-weight);
     color: var(--text-color-dark);
   }
