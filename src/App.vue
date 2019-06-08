@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <!-- <Particles /> -->
     <router-view />
+    <Background />
   </div>
 </template>
 
@@ -9,11 +9,11 @@
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { mapState, mapGetters } from 'vuex';
-  import Particles from '@/components/Particles.vue';
+  import Background from '@/components/Background.vue';
 
   @Component({
     components: {
-      Particles
+      Background
     },
     computed: mapState([
       'theme',
