@@ -11,7 +11,6 @@
     "copy:assets": "cp -rf src/assets/icons/ public/assets/icons"
   },
   "dependencies": {
-    "particles.js": "^2.0.0",
     "register-service-worker": "^1.5.2",
     "vue": "^2.5.22",
     "vue-class-component": "^6.0.0",
