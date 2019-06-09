@@ -1,13 +1,46 @@
 <template>
-  <div class="gradient" />
+  <div class="gradient" :style="{ 'background': [getFallbackBackground(), getWebKitLinearGradient(), getLinearGradient()] }" />
 </template>
 
 
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
+  import { mapState } from 'vuex'
 
-  @Component({})
-  export default class Gradient extends Vue {}
+  interface GradientOptions {
+    firstColor: string;
+    secondColor: string;
+    direction: string;
+  }
+
+  @Component({
+    computed: mapState([
+      'theme',
+      'gradient'
+    ]),
+  })
+  export default class Gradient extends Vue {
+    public theme!: string;
+    public gradient!: GradientOptions;
+
+    trimBackslash(colorValue: string) {
+      return colorValue.replace('\\', '');
+    }
+
+    getFallbackBackground() {
+      return this.gradient.firstColor;
+    }
+
+    getWebKitLinearGradient() {
+      const { direction, firstColor, secondColor } = this.gradient
+      return `-webkit-linear-gradient(to ${direction}, ${this.trimBackslash(firstColor)}, ${this.trimBackslash(secondColor)})`;
+    }
+
+    getLinearGradient() {
+      const { direction, firstColor, secondColor } = this.gradient
+      return `linear-gradient(to ${direction}, ${this.trimBackslash(firstColor)}, ${this.trimBackslash(secondColor)})`;
+    }
+  }
 </script>
 
 
@@ -18,9 +51,5 @@
     left: 0;
     right: 0;
     bottom: 0;
-
-    background: #f857a6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ff5858, #f857a6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff5858, #f857a6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 </style>

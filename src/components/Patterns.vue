@@ -1,5 +1,5 @@
 <template>
-  <div class="pattern-mask" :style="{ 'mask-image': getBackgroundPatterns() }" />
+  <div class="pattern-mask" :style="{ 'mask-image': getPattern() }" />
 </template>
 
 
@@ -13,10 +13,10 @@
     ]),
   })
   export default class Patterns extends Vue {
-    public portfolio!: string;
+    public pattern!: string;
 
-    getBackgroundPatterns() {
-      return `url(assets/patterns/topography.svg)`;
+    getPattern() {
+      return `url(assets/patterns/${this.pattern}.svg)`;
     }
   }
 </script>

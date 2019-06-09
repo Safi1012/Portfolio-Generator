@@ -1,6 +1,6 @@
-theme: light
-
 portfolio: Filipe's Portfolio
+
+theme: light
 
 socialMedia:
   - name: GitHub
@@ -29,3 +29,15 @@ projects:
     url: https://github.com/Safi1012/filipesantoscorrea.com
     icon: assets/icons/projects/about-me.svg
     backgroundColor:
+
+# 
+# possible options: 'pattern' and 'gradient'
+# 
+backgroundType: gradient
+
+gradient:
+  firstColor: \#fff
+  secondColor: \#D6F2FF
+  direction: right
+
+pattern: dominos
