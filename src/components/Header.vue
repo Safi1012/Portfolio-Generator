@@ -38,10 +38,10 @@
     position: fixed;
     justify-content: flex-end;
     width: 100vw;
-    background-color: var(--secondary-color);
     margin: 0;
     padding: 0;
     top: 0;
+    z-index: 1;
   }
 
   li {

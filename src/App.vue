@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <router-view />
-    <Background />
+    <Patterns />
+    <!-- <Gradient /> -->
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { mapState, mapGetters } from 'vuex';
-  import Background from '@/components/Background.vue';
+  import Patterns from '@/components/Patterns.vue';
+  import Gradient from '@/components/Gradient.vue';
 
   @Component({
     components: {
-      Background
+      Patterns,
+      Gradient
     },
     computed: mapState([
       'theme',
