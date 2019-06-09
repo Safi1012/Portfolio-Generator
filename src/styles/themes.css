@@ -1,10 +1,12 @@
 .light {
   /* colors */
-  --primary-color-light: #D6F2FF;
+  --primary-color-light: red;
   --primary-color: #2BB0ED;
   --primary-color-dark: #127FBF;
+
   --secondary-color: #FAFAFA;
-  --text-color-light: #c7bdbd;
+
+  --text-color-light: #C7BDBD;
   --text-color-dark: #777;
 
   /* fonts */
@@ -18,11 +20,11 @@
 .dark {
   /* colors */
   --primary-color-light: #FAFAFA;
-  --primary-color: #c7bdbd;
+  --primary-color: #C7BDBD;
   --primary-color-dark: #333333;
   --secondary-color: #333333;
   --text-color-light: #FAFAFA;
-  --text-color-dark: #c7bdbd;
+  --text-color-dark: #C7BDBD;
 
   /* fonts */
   --primary-font-family: 'Playfair Display', serif;

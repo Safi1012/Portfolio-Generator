@@ -12,6 +12,7 @@
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator'
   import { mapState } from 'vuex'
+  import { validateColor } from '../utils/validator';
 
   @Component({
     props: {
@@ -19,14 +20,11 @@
       iconPath: String,
       projectName: String,
       backgroundColor: String
-    },
-    computed: mapState([
-      'projects'
-    ]),
+    }
   })
   export default class ProjectCard extends Vue {
     get computedBackgroundColor() {
-      return this.$props.backgroundColor ? this.$props.backgroundColor.replace('\\', '') : 'white';
+      return this.$props.backgroundColor ? validateColor(this.$props.backgroundColor, '#FFF') : '#FFF';
     }
   }
 </script>
