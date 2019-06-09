@@ -15,12 +15,10 @@
 
   @Component({
     computed: mapState([
-      'theme',
       'gradient'
     ]),
   })
   export default class Gradient extends Vue {
-    public theme!: string;
     public gradient!: GradientOptions;
 
     trimBackslash(colorValue: string) {

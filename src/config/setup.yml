@@ -15,11 +15,6 @@ projects:
     icon: assets/icons/projects/shrink-me.svg
     backgroundColor:
 
-  - name: Bitcoin
-    url: https://github.com/Safi1012/bitcoin
-    icon: assets/icons/projects/bitcoin.png
-    backgroundColor:
-
   - name: Snake
     url: https://github.com/Safi1012/bitcoin
     icon: assets/icons/projects/responsive-snake.png
@@ -30,14 +25,21 @@ projects:
     icon: assets/icons/projects/about-me.svg
     backgroundColor:
 
+  - name: Bitcoin
+    url: https://github.com/Safi1012/bitcoin
+    icon: assets/icons/projects/bitcoin.png
+    backgroundColor:
+
 # 
 # possible options: 'pattern' and 'gradient'
 # 
-backgroundType: gradient
+backgroundType: pattern
 
 gradient:
-  firstColor: \#fff
-  secondColor: \#D6F2FF
   direction: right
+  firstColor: FFF
+  secondColor: D6F2FF
 
-pattern: dominos
+pattern:
+  type: circuit-board.svg
+  color: FFF
