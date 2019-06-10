@@ -59,9 +59,9 @@
   p {
     text-align: center;
     margin-top: 0.5rem;
-    font-family: var(--secondary-font-family);
-    font-weight: var(--secondary-font-weight);
-    color: var(--text-color-dark);
+    font-family: var(--project-name-font-family);
+    font-weight: var(--project-name-font-weight);
+    color: var(--project-name-text-color);
   }
 
   a {

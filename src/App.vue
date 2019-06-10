@@ -38,12 +38,12 @@
   @import './styles/themes.css';
 
   * {
-    font-family: var(--primary-font-family);
-    font-weight: var(--primary-font-weight);
+    font-family: var(--portfolio-title-font-family);
+    font-weight: var(--portfolio-title-font-weight);
   }
 
   body {
     margin: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
   }
 </style>

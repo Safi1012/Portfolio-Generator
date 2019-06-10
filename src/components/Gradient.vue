@@ -1,5 +1,5 @@
 <template>
-  <div class="gradient" :style="{ 'background': [getFallbackBackground(), getWebKitLinearGradient(), getLinearGradient()] }" />
+  <div class="gradient" />
 </template>
 
 
@@ -49,5 +49,9 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+    background: var(--gradient-start-color);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(var(--gradient-direction), var(--gradient-start-color), var(--gradient-end-color));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(var(--gradient-direction), var(--gradient-start-color), var(--gradient-end-color));
   }
 </style>

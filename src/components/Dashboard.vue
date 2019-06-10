@@ -60,7 +60,7 @@
   }
 
   h1 {
-    color: var(--primary-color);
+    color: var(--portfolio-title-text-color);
     font-size: 2rem;
     margin-bottom: 4rem;
     z-index: 2;

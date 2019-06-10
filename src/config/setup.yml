@@ -35,11 +35,4 @@ projects:
 # 
 backgroundType: pattern
 
-gradient:
-  direction: right
-  firstColor: FFF
-  secondColor: D6F2FF
-
-pattern:
-  type: circuit-board.svg
-  color: FFF
+patternImage: circuit-board.svg

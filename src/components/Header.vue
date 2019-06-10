@@ -59,7 +59,7 @@
   }
 
   .svg-icon {
-    stroke: var(--primary-color);
+    stroke: var(--social-media-icon-color);
     fill: none;
   }
 
@@ -68,7 +68,7 @@
   }
 
   .icon-mask {
-    background-color: var(--primary-color);
+    background-color: var(--social-media-icon-color);
     width: 1.5rem;
     height: 1.5rem;
     mask-repeat: no-repeat;

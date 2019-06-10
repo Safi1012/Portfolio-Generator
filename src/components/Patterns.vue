@@ -1,5 +1,5 @@
 <template>
-  <div class="pattern-mask" :style="{ 'mask-image': patternImage, 'background-color': pattern.color }" />
+  <div class="pattern-mask" :style="{ 'mask-image': fetchedImage }" />
 </template>
 
 
@@ -7,29 +7,24 @@
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { mapState } from 'vuex'
 
-  interface PatternType {
-    type: string;
-    color: string;
-  }
-
   @Component({
     computed: mapState([
-      'pattern'
+      'patternImage'
     ])
   })
   export default class Patterns extends Vue {
-    public pattern!: PatternType;
-    public patternImage = 'url(assets/patterns/hideout.svg)' // fallback image
+    public patternImage!: string;
+    public fetchedImage = 'url(assets/patterns/hideout.svg)' // fallback image
 
     mounted() {
-      this.fetchPatternImage(`assets/patterns/${this.pattern.type}`)
+      this.fetchPatternImage(`assets/patterns/${this.patternImage}`)
     }
     
-    fetchPatternImage(url: string) {
+    fetchPatternImage(url = '') {
       fetch(url, { method: 'HEAD', cache: 'no-cache' })
         .then(response => {
           if (response.status === 200) {
-            this.patternImage = `url(assets/patterns/${this.pattern.type})`;
+            this.fetchedImage = `url(assets/patterns/${this.patternImage})`;
           }
         })
     }
@@ -45,5 +40,6 @@
     right: 0;
     bottom: 0;
     z-index: 0;
+    background-color: var(--pattern-color);
   }
 </style>

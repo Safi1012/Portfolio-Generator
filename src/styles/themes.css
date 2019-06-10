@@ -1,34 +1,44 @@
 .light {
   /* colors */
-  --primary-color-light: red;
-  --primary-color: #2BB0ED;
-  --primary-color-dark: #127FBF;
+  --social-media-icon-color: #2BB0ED;
+  --background-color: #FAFAFA;
 
-  --secondary-color: #FAFAFA;
+  --portfolio-title-text-color: #2BB0ED;
+  --project-name-text-color: #777;
 
-  --text-color-light: #C7BDBD;
-  --text-color-dark: #777;
+  --gradient-start-color: #FFF;
+  --gradient-end-color: #D6F2FF;
+  --gradient-direction: to right;
+
+  --pattern-color: #FFF;
 
   /* fonts */
-  --primary-font-family: 'Lato', sans-serif;
-  --primary-font-weight: 300;
-  --secondary-font-family: 'Lato', sans-serif;
-  --secondary-font-weight: 700;
+  --portfolio-title-font-family: 'Lato', sans-serif;
+  --portfolio-title-font-weight: 300;
+
+  --project-name-font-family: 'Lato', sans-serif;
+  --project-name-font-weight: 700;
 }
 
 
 .dark {
   /* colors */
-  --primary-color-light: #FAFAFA;
-  --primary-color: #C7BDBD;
-  --primary-color-dark: #333333;
-  --secondary-color: #333333;
-  --text-color-light: #FAFAFA;
-  --text-color-dark: #C7BDBD;
+  --social-media-icon-color: #2BB0ED;
+  --background-color: #FAFAFA;
+
+  --portfolio-title-text-color: #2BB0ED;
+  --project-name-text-color: #777;
+
+  --gradient-start-color: #FFF;
+  --gradient-end-color: #D6F2FF;
+  --gradient-direction: to right;
+
+  --pattern-color: #FFF;
 
   /* fonts */
-  --primary-font-family: 'Playfair Display', serif;
-  --primary-font-weight: 300;
-  --secondary-font-family: 'Lato', sans-serif;
-  --secondary-font-weight: 300;
+  --portfolio-title-font-family: 'Lato', sans-serif;
+  --portfolio-title-font-weight: 300;
+
+  --project-name-font-family: 'Lato', sans-serif;
+  --project-name-font-weight: 700;
 }
