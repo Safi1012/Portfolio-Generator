@@ -2,7 +2,7 @@
   <div class="project-card">
 
     <a :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
-      <img :src="iconPath" :alt="`${projectName} icon`" />
+      <img :src="fetchedImage" :alt="`${projectName} icon`" />
     </a>
     <p>{{this.projectName}}</p>
   </div>
@@ -17,14 +17,30 @@
   @Component({
     props: {
       url: String,
-      iconPath: String,
+      image: String,
       projectName: String,
       backgroundColor: String
     }
   })
   export default class ProjectCard extends Vue {
+    public image!: string;
+    public fetchedImage = 'assets/icons/projects-fallback.svg' // fallback image
+
     get computedBackgroundColor() {
       return this.$props.backgroundColor ? validateColor(this.$props.backgroundColor, '#FFF') : '#FFF';
+    }
+
+    mounted() {
+      this.fetchProjectImage(`assets/icons/projects/${this.$props.image}`)
+    }
+    
+    fetchProjectImage(url = '') {
+      fetch(url, { method: 'HEAD', cache: 'no-cache' })
+        .then(response => {
+          if (response.status === 200) {
+            this.fetchedImage = `assets/icons/projects/${this.$props.image}`;
+          }
+        })
     }
   }
 </script>

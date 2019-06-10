@@ -6,7 +6,7 @@
       <ProjectCard 
         v-for="(project, index) in projects" :key="index"
         :url="project.url"
-        :iconPath="project.icon"
+        :image="project.image"
         :projectName="project.name"
         :backgroundColor="project.backgroundColor"
       />
@@ -23,7 +23,7 @@
   interface Project {
     name: string;
     url: string;
-    icon: string;
+    image: string;
     backgroundColor: string;
   }
 

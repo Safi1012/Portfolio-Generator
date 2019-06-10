@@ -10,8 +10,8 @@ export const validateDirection = (direction = '') => {
 export const validateColor = (color = '', fallbackColorInHex = '#FFF') => {
   const hexRegex = /^[0-9a-fA-F]{3,8}$/
 
-  color.replace('\\', '');
-  color.replace('#', '');
+  color = color.replace('\\', '');
+  color = color.replace('#', '');
 
   if (hexRegex.test(color)) {
     return '#' + color;
