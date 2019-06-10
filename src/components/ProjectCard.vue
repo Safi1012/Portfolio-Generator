@@ -24,7 +24,7 @@
   })
   export default class ProjectCard extends Vue {
     public image!: string;
-    public fetchedImage = 'assets/icons/projects-fallback.svg' // fallback image
+    public fetchedImage = 'assets/icons/fallback.svg'
 
     get computedBackgroundColor() {
       return this.$props.backgroundColor ? validateColor(this.$props.backgroundColor, '#FFF') : '#FFF';
