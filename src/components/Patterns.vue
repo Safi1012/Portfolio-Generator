@@ -1,5 +1,6 @@
 <template>
-  <div class="pattern-mask" :style="{ 'mask-image': fetchedImage }" />
+  <div v-if="isFileExtensionSVG(fetchedImage)" class="patterns" :style="{ 'mask-image': fetchedImage }" />
+  <div v-else class="patterns" :style="{ 'background': fetchedImage }" />
 </template>
 
 
@@ -14,26 +15,33 @@
   })
   export default class Patterns extends Vue {
     public patternImage!: string;
-    public fetchedImage = 'url(assets/patterns/hideout.svg)' // fallback image
+    public fetchedImage = '';
 
     mounted() {
       this.fetchPatternImage(`assets/patterns/${this.patternImage}`)
     }
-    
+
+    isFileExtensionSVG(path: string) {
+      return path.includes('.svg')
+    }
+   
     fetchPatternImage(url = '') {
       fetch(url, { method: 'HEAD', cache: 'no-cache' })
         .then(response => {
           if (response.status === 200) {
             this.fetchedImage = `url(assets/patterns/${this.patternImage})`;
+          } else {
+            this.fetchedImage = `url(assets/patterns/hideout.svg)`;
           }
         })
+        .catch(() => this.fetchedImage = `url(assets/patterns/hideout.svg)`);
     }
   }
 </script>
 
 
 <style lang="scss" scoped>
-  .pattern-mask {
+  .patterns {
     position: fixed;
     top: 0;
     left: 0;
