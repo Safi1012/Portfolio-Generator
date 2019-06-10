@@ -39,11 +39,6 @@
   export default class Dashboard extends Vue {
     public portfolio!: string;
     public projects!: Project[];
-
-    mounted() {
-      console.log(this.portfolio);
-      console.log(this.projects);
-    }
   }
 </script>
 

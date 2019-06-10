@@ -2,7 +2,7 @@
   <ul>
     <li v-for="(social, index) in socialMedia" :key="index">
       <a :href="social['url']" target="_blank" rel="noopener nofollow">
-        <div class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['name']) }" />
+        <div class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['image']) }" />
       </a>
     </li>
   </ul>
@@ -13,20 +13,22 @@
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { mapState, mapGetters } from 'vuex'
 
+  interface SocialMedia {
+    name: string;
+    url: string;
+    image: string;
+  }
+
   @Component({
     computed: mapState([
       'socialMedia',
-    ]),
+    ])
   })
   export default class Header extends Vue {
-    public socialMedia!: string;
+    public socialMedia!: [SocialMedia];
 
-    isFileExtensionSVG(path: string) {
-      return path.indexOf('.svg') === path.length - 4
-    }
-
-    getCSSImageURL(svgName: string) {
-      return `url(assets/icons/social-media/${svgName.toLowerCase()}.svg`
+    getCSSImageURL(image: string) {
+      return `url(assets/icons/social-media/${image})`;
     }
   }
 </script>
@@ -73,17 +75,6 @@
     height: 1.5rem;
     mask-repeat: no-repeat;
     mask-position: center;
-  }
-
-  @media (min-width: 768px) {
-    li {
-      margin: 1rem 0.65rem;
-    }
-
-    .icon-mask {
-      width: 1.65rem;
-      height: 1.65rem;
-    }
   }
 
   @media (min-width: 768px) {
