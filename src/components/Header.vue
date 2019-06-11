@@ -1,7 +1,7 @@
 <template>
   <ul :style=" { 'top': currentScrollPosition } ">
     <li v-for="(social, index) in socialMedia" :key="index">
-      <a :href="social['url']" target="_blank" rel="noopener nofollow" :aria-label="social['name']">
+      <a class="header-link" :href="social['url']" target="_blank" rel="noopener nofollow" :aria-label="social['name']">
         <div class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['image']) }" />
       </a>
     </li>
@@ -48,6 +48,12 @@
 
 
 <style lang="scss" scoped>
+  .header-link {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
   ul {
     display: flex;
     position: fixed;
@@ -62,11 +68,11 @@
   li {
     list-style: none;
     display: inline;
-    margin: 1rem 0.5rem;
+    margin: 2rem 1rem;
   }
 
   li:last-child {
-    margin-right: 1.5rem;
+    margin-right: 2.5rem;
   }
 
   div {
@@ -84,8 +90,8 @@
 
   .icon-mask {
     background-color: var(--social-media-icon-color);
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
     mask-repeat: no-repeat;
     mask-position: center;
   }
