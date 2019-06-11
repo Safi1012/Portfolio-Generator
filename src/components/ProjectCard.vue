@@ -2,7 +2,7 @@
   <div class="project-card">
 
     <a :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
-      <img :src="fetchedImage" :alt="`${projectName} icon`" />
+      <img :src="fetchedImage" :alt="`${projectName} logo`" />
     </a>
     <p>{{this.projectName}}</p>
   </div>

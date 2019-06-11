@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li v-for="(social, index) in socialMedia" :key="index">
-      <a :href="social['url']" target="_blank" rel="noopener nofollow">
+      <a :href="social['url']" target="_blank" rel="noopener nofollow" :aria-label="social['name']">
         <div class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['image']) }" />
       </a>
     </li>
