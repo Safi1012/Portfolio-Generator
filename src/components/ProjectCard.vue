@@ -1,10 +1,10 @@
 <template>
   <div class="project-card">
 
-    <a :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
+    <a class="project-logo" :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
       <img :src="fetchedImage" :alt="`${projectName} logo`" />
     </a>
-    <p>{{this.projectName}}</p>
+    <a class="project-name" :href="url" target="_blank" rel="noopener nofollow">{{this.projectName}}</a>
   </div>
 </template>
 
@@ -48,11 +48,20 @@
 
 <style lang="scss" scoped>
   .project-card {
-    width: 9rem;
+    width: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .project-name {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-family: var(--project-name-font-family);
+    font-weight: var(--project-name-font-weight);
+    color: var(--project-name-text-color);
   }
 
   img {
@@ -72,15 +81,7 @@
     font-size: 1rem;
   }
 
-  p {
-    text-align: center;
-    margin-top: 0.5rem;
-    font-family: var(--project-name-font-family);
-    font-weight: var(--project-name-font-weight);
-    color: var(--project-name-text-color);
-  }
-
-  a {
+  .project-logo {
     text-decoration: none;
     border-radius: 1rem;
     width: 6rem;
@@ -98,7 +99,7 @@
       width: 9.5rem;
     }
 
-    img, a {
+    img, .project-logo {
       width: 6.5rem;
       height: 6.5rem;
     }
@@ -109,7 +110,7 @@
       width: 10rem;
     }
 
-    img, a {
+    img, .project-logo {
       width: 7rem;
       height: 7rem;
     }

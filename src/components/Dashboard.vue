@@ -52,6 +52,7 @@
     min-height: 80vh;
     margin: 1rem;
     margin-top: 70px;
+    padding-top: 2rem;
   }
 
   h1 {
