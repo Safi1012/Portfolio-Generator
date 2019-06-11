@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul :style=" { 'top': currentScrollPosition } ">
     <li v-for="(social, index) in socialMedia" :key="index">
       <a :href="social['url']" target="_blank" rel="noopener nofollow" :aria-label="social['name']">
         <div class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['image']) }" />
@@ -26,9 +26,22 @@
   })
   export default class Header extends Vue {
     public socialMedia!: [SocialMedia];
+    private currentScrollPosition = '0px';
 
     getCSSImageURL(image: string) {
       return `url(assets/icons/social-media/${image})`;
+    }
+
+    onScroll() {    
+      this.currentScrollPosition = (-1 * (window.pageYOffset || document.documentElement.scrollTop)) + 'px';
+    }
+
+    created() {
+      window.addEventListener('scroll', this.onScroll);
+    }
+
+    destroyed() {
+      window.removeEventListener('scroll', this.onScroll);
     }
   }
 </script>
