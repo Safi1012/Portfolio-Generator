@@ -51,7 +51,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .project-card__name {

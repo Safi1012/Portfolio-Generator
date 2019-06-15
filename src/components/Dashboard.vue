@@ -50,15 +50,14 @@
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    margin: 1rem;
-    margin-top: 70px;
-    padding-top: 2rem;
+    margin: 70px 1rem;
+    padding: 2rem 0;
   }
 
   .dashboard__title {
     color: var(--portfolio-title-text-color);
     font-size: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     z-index: 2;
   }
 

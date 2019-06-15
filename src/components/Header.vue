@@ -117,4 +117,19 @@
       margin-right: 2rem;
     }
   }
+
+  @media (min-width: 1440px) {
+    .header__list {
+      margin: 2rem 1.5rem;
+    }
+
+    .header__list:last-child {
+      margin-right: 4rem;
+    }
+
+    .header__icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 </style>
