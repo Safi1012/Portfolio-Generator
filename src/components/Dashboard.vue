@@ -1,8 +1,8 @@
 <template>
   <div class="dashboard">
-    <h1>{{this.portfolio}}</h1>
+    <h1 class="dashboard__title">{{this.portfolio}}</h1>
 
-    <div class="grid">
+    <div class="dashboard__grid">
       <ProjectCard 
         v-for="(project, index) in projects" :key="index"
         :url="project.url"
@@ -55,14 +55,14 @@
     padding-top: 2rem;
   }
 
-  h1 {
+  .dashboard__title {
     color: var(--portfolio-title-text-color);
     font-size: 2rem;
     margin-bottom: 4rem;
     z-index: 2;
   }
 
-  .grid {
+  .dashboard__grid {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -72,21 +72,21 @@
   }
 
   @media (min-width: 992px) {
-    h1 {
+    .dashboard__title {
       font-size: 2.2rem;
     }
 
-    .grid {
+    .dashboard__grid {
       max-width: 750px;
     }
   }
 
   @media (min-width: 1400px) {
-    h1 {
+    .dashboard__title {
       font-size: 2.5rem;
     }
     
-    .grid {
+    .dashboard__grid {
       max-width: 850px;
     }
   }

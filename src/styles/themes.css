@@ -4,7 +4,8 @@
   --background-color: #FAFAFA;
 
   --portfolio-title-text-color: #2BB0ED;
-  --project-name-text-color: #777;
+  --project-card-text-color: #777;
+  --project-card-shadow-color: #00000020;
 
   --gradient-start-color: #FFF;
   --gradient-end-color: #D6F2FF;
@@ -16,8 +17,8 @@
   --portfolio-title-font-family: 'Lato', sans-serif;
   --portfolio-title-font-weight: 300;
 
-  --project-name-font-family: 'Lato', sans-serif;
-  --project-name-font-weight: 700;
+  --project-card-font-family: 'Lato', sans-serif;
+  --project-card-font-weight: 700;
 }
 
 
@@ -27,7 +28,8 @@
   --background-color: #FAFAFA;
 
   --portfolio-title-text-color: #2BB0ED;
-  --project-name-text-color: #777;
+  --project-card-text-color: #777;
+  --project-card-shadow-color: #00000029;
 
   --gradient-start-color: #FFF;
   --gradient-end-color: #D6F2FF;
@@ -39,6 +41,6 @@
   --portfolio-title-font-family: 'Lato', sans-serif;
   --portfolio-title-font-weight: 300;
 
-  --project-name-font-family: 'Lato', sans-serif;
-  --project-name-font-weight: 700;
+  --project-card-font-family: 'Lato', sans-serif;
+  --project-card-font-weight: 700;
 }

@@ -1,8 +1,8 @@
 <template>
-  <ul :style=" { 'top': currentScrollPosition } ">
-    <li v-for="(social, index) in socialMedia" :key="index">
-      <a class="header-link" :href="social['url']" target="_blank" rel="noopener nofollow" :aria-label="social['name']">
-        <div class="icon-mask" :style="{ 'mask-image': getCSSImageURL(social['image']) }" />
+  <ul class="header" :style=" { 'top': currentScrollPosition } ">
+    <li class="header__list" v-for="(social, index) in socialMedia" :key="index">
+      <a class="header__link" :href="social['url']" target="_blank" rel="noopener nofollow" :aria-label="social['name']">
+        <div class="header__icon" :style="{ 'mask-image': getCSSImageURL(social['image']) }" />
       </a>
     </li>
   </ul>
@@ -48,13 +48,7 @@
 
 
 <style lang="scss" scoped>
-  .header-link {
-    display: inline-block;
-    width: 1.7rem;
-    height: 1.7rem;
-  }
-
-  ul {
+  .header {
     display: flex;
     position: fixed;
     justify-content: flex-end;
@@ -64,21 +58,23 @@
     top: 0;
     z-index: 1;
   }
+  
+  .header__link {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 
-  li {
+  .header__list {
     list-style: none;
     display: inline;
     margin: 2rem 1rem;
   }
 
-  li:last-child {
+  .header__list:last-child {
     margin-right: 2.5rem;
   }
-
-  div {
-    display: inline-flex;
-  }
-
+  
   .svg-icon {
     stroke: var(--social-media-icon-color);
     fill: none;
@@ -88,35 +84,36 @@
     stroke: none;
   }
 
-  .icon-mask {
+  .header__icon {
     background-color: var(--social-media-icon-color);
     width: 1.7rem;
     height: 1.7rem;
     mask-repeat: no-repeat;
     mask-position: center;
+    display: inline-flex;
   }
 
   @media (min-width: 768px) {
-    li {
+    .header__list {
       margin: 1rem 0.65rem;
     }
 
-    li:last-child {
+    .header__list:last-child {
       margin-right: 1.8rem;
     }
 
-    .icon-mask {
+    .header__icon {
       width: 1.65rem;
       height: 1.65rem;
     }
   }
 
   @media (min-width: 1200px) {
-    li {
+    .header__list {
       margin: 1.2rem 0.8rem;
     }
 
-    li:last-child {
+    .header__list:last-child {
       margin-right: 2rem;
     }
   }

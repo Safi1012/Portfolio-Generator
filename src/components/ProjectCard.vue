@@ -1,10 +1,10 @@
 <template>
   <div class="project-card">
 
-    <a class="project-logo" :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
-      <img :src="fetchedImage" :alt="`${projectName} logo`" />
+    <a class="project-card__link" :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
+      <img class="project-card__logo" :src="fetchedImage" :alt="`${projectName} logo`" />
     </a>
-    <a class="project-name" :href="url" target="_blank" rel="noopener nofollow">{{this.projectName}}</a>
+    <a class="project-card__name" :href="url" target="_blank" rel="noopener nofollow">{{this.projectName}}</a>
   </div>
 </template>
 
@@ -23,7 +23,6 @@
     }
   })
   export default class ProjectCard extends Vue {
-    public image!: string;
     public fetchedImage = 'assets/icons/fallback.svg'
 
     get computedBackgroundColor() {
@@ -55,33 +54,29 @@
     margin-bottom: 3.5rem;
   }
 
-  .project-name {
+  .project-card__name {
     text-decoration: none;
     text-align: center;
     margin-top: 0.5rem;
-    font-family: var(--project-name-font-family);
-    font-weight: var(--project-name-font-weight);
-    color: var(--project-name-text-color);
+    font-family: var(--project-card-font-family);
+    font-weight: var(--project-card-font-weight);
+    color: var(--project-card-text-color);
   }
 
-  img {
+  .project-card__logo {
     display: inline-flex;
     width: 6rem;
     height: 6rem;
     border-radius: 1rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    box-shadow: 0 3px 6px var(--project-card-shadow-color);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
 
-  img:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+  .project-card__logo:hover {
+    box-shadow: 0 14px 28px var(--project-card-shadow-color), 0 10px 10px var(--project-card-shadow-color);
   }
 
-  h1 {
-    font-size: 1rem;
-  }
-
-  .project-logo {
+  .project-card__link {
     text-decoration: none;
     border-radius: 1rem;
     width: 6rem;
@@ -99,7 +94,8 @@
       width: 9.5rem;
     }
 
-    img, .project-logo {
+    .project-card__logo,
+    .project-card__link {
       width: 6.5rem;
       height: 6.5rem;
     }
@@ -110,7 +106,8 @@
       width: 10rem;
     }
 
-    img, .project-logo {
+    .project-card__logo,
+    .project-card__link {
       width: 7rem;
       height: 7rem;
     }
