@@ -29,7 +29,7 @@
     private currentScrollPosition = '0px';
 
     getCSSImageURL(image: string) {
-      return `url(assets/icons/social-media/${image})`;
+      return `url(assets/images/social-media/${image})`;
     }
 
     onScroll() {    

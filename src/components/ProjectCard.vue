@@ -23,21 +23,21 @@
     }
   })
   export default class ProjectCard extends Vue {
-    public fetchedImage = 'assets/icons/fallback.svg'
+    public fetchedImage = 'assets/images/fallback.svg'
 
     get computedBackgroundColor() {
       return this.$props.backgroundColor ? validateColor(this.$props.backgroundColor, '#FFF') : '#FFF';
     }
 
     mounted() {
-      this.fetchProjectImage(`assets/icons/projects/${this.$props.image}`)
+      this.fetchProjectImage(`assets/images/projects/${this.$props.image}`)
     }
     
     fetchProjectImage(url = '') {
       fetch(url, { method: 'HEAD', cache: 'no-cache' })
         .then(response => {
           if (response.status === 200) {
-            this.fetchedImage = `assets/icons/projects/${this.$props.image}`;
+            this.fetchedImage = `assets/images/projects/${this.$props.image}`;
           }
         })
     }

@@ -18,7 +18,7 @@
     public fetchedImage = '';
 
     mounted() {
-      this.fetchPatternImage(`assets/patterns/${this.patternImage}`)
+      this.fetchPatternImage(`assets/images/patterns/${this.patternImage}`)
     }
 
     isFileExtensionSVG(path: string) {
@@ -29,12 +29,12 @@
       fetch(url, { method: 'HEAD', cache: 'no-cache' })
         .then(response => {
           if (response.status === 200) {
-            this.fetchedImage = `url(assets/patterns/${this.patternImage})`;
+            this.fetchedImage = `url(assets/images/patterns/${this.patternImage})`;
           } else {
-            this.fetchedImage = `url(assets/patterns/hideout.svg)`;
+            this.fetchedImage = `url(assets/images/patterns/hideout.svg)`;
           }
         })
-        .catch(() => this.fetchedImage = `url(assets/patterns/hideout.svg)`);
+        .catch(() => this.fetchedImage = `url(assets/images/patterns/hideout.svg)`);
     }
   }
 </script>
