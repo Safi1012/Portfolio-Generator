@@ -112,4 +112,21 @@
       height: 7rem;
     }
   }
+
+  // progressively enhance user experience
+  @supports(display: grid) {
+    .project-card {
+      width: auto;
+    }
+
+    .project-card__link {
+      width: 100%;
+      height: auto;
+    }
+
+    .project-card__logo {
+      width: 100%;
+      height: auto;
+    }
+  }
 </style>

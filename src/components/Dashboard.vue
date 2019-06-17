@@ -91,4 +91,33 @@
       max-width: 850px;
     }
   }
+
+  // progressively enhance user experience
+  @supports(display: grid) {
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: minmax(1rem, auto);
+      column-gap: 1rem;
+      row-gap: 1rem;
+      align-content: center;
+    }
+
+    .dashboard__title {
+      grid-column-start: 4;
+      grid-column-end: 8;
+    }
+
+    .dashboard__grid {
+      // position on the outer grid
+      grid-column-start: 4;
+      grid-column-end: 8;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(1rem, auto);
+      column-gap: 1rem;
+      row-gap: 1rem;
+    }
+  }
 </style>
