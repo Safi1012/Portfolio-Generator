@@ -22,6 +22,3 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
-
-# public
-/public/assets/icons

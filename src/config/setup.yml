@@ -18,18 +18,38 @@ projects:
     backgroundColor: FFF
 
   - name: Snake
-    url: https://github.com/Safi1012/bitcoin
+    url: https://safi1012.github.io/ResponsiveSnake/
     image: responsive-snake.png
     backgroundColor: FFF
 
   - name: About Me
-    url: https://github.com/Safi1012/filipesantoscorrea.com
+    url: https://filipesantoscorrea.com/
     image: about-me.svg
-    backgroundColor: FBFBFB
+    backgroundColor: FFF
+
+  - name: Portfolio
+    url: 
+    image: portfolio.png
+    backgroundColor: FFF
+
+  - name: Copy2me
+    url: https://github.com/Safi1012/copy2me
+    image: copy2me.png
+    backgroundColor: FFF
+
+  - name: Daily UI
+    url: https://www.behance.net/gallery/57148087/Daily-UI
+    image: dailyUI.png
+    backgroundColor: FFF
 
   - name: Bitcoin
     url: https://github.com/Safi1012/bitcoin
     image: bitcoin.png
+    backgroundColor: FFF
+
+  - name: Piclet
+    url: https://github.com/Safi1012/Piclet
+    image: piclet.png
     backgroundColor: FFF
 
 # 

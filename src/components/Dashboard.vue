@@ -73,6 +73,7 @@
   @media (min-width: 992px) {
     .dashboard__title {
       font-size: 2.2rem;
+      margin-bottom: 2.5rem;
     }
 
     .dashboard__grid {
@@ -83,6 +84,7 @@
   @media (min-width: 1400px) {
     .dashboard__title {
       font-size: 2.5rem;
+      margin-bottom: 4rem;
     }
     
     .dashboard__grid {
