@@ -117,6 +117,7 @@
   @supports(display: grid) {
     .project-card {
       width: auto;
+      margin-bottom: 0;
     }
 
     .project-card__link {
