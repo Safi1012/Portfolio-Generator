@@ -120,11 +120,6 @@
       margin-bottom: 0;
     }
 
-    .project-card__link {
-      width: 100%;
-      height: auto;
-    }
-
     .project-card__logo {
       width: 100%;
       height: auto;
