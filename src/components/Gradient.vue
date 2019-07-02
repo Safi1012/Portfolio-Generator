@@ -16,7 +16,7 @@
   @Component({
     computed: mapState([
       'gradient'
-    ]),
+    ])
   })
   export default class Gradient extends Vue {
     public gradient!: GradientOptions;

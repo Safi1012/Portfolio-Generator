@@ -24,7 +24,7 @@
     isFileExtensionSVG(path: string) {
       return path.includes('.svg')
     }
-   
+
     fetchPatternImage(url = '') {
       fetch(url, { method: 'HEAD', cache: 'no-cache' })
         .then(response => {

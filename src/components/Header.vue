@@ -21,7 +21,7 @@
 
   @Component({
     computed: mapState([
-      'socialMedia',
+      'socialMedia'
     ])
   })
   export default class Header extends Vue {
@@ -32,7 +32,7 @@
       return `url(assets/images/social-media/${image})`;
     }
 
-    onScroll() {    
+    onScroll() {
       this.currentScrollPosition = (-1 * (window.pageYOffset || document.documentElement.scrollTop)) + 'px';
     }
 
@@ -58,7 +58,7 @@
     top: 0;
     z-index: 1;
   }
-  
+
   .header__link {
     display: inline-block;
     width: 1.7rem;
@@ -74,7 +74,7 @@
   .header__list:last-child {
     margin-right: 2.5rem;
   }
-  
+
   .svg-icon {
     stroke: var(--social-media-icon-color);
     fill: none;

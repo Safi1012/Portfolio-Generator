@@ -21,12 +21,12 @@
     computed: mapState([
       'theme',
       'backgroundType'
-    ]),
+    ])
   })
   export default class App extends Vue {
     public theme!: string;
     public backgroundType!: string;
-    
+
     mounted() {
       document.body.classList.add(this.theme);
     }

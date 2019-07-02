@@ -3,7 +3,7 @@
     <h1 class="dashboard__title">{{this.portfolio}}</h1>
 
     <div class="dashboard__grid">
-      <ProjectCard 
+      <ProjectCard
         v-for="(project, index) in projects" :key="index"
         :url="project.url"
         :image="project.image"
@@ -33,8 +33,8 @@
     },
     computed: mapState([
       'portfolio',
-      'projects',
-    ]),
+      'projects'
+    ])
   })
   export default class Dashboard extends Vue {
     public portfolio!: string;
@@ -86,7 +86,7 @@
       font-size: 2.5rem;
       margin-bottom: 4rem;
     }
-    
+
     .dashboard__grid {
       max-width: 850px;
     }

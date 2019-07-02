@@ -32,7 +32,7 @@
     mounted() {
       this.fetchProjectImage(`assets/images/projects/${this.$props.image}`)
     }
-    
+
     fetchProjectImage(url = '') {
       fetch(url, { method: 'HEAD', cache: 'no-cache' })
         .then(response => {
