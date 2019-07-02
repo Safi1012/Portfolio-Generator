@@ -4,16 +4,23 @@ module.exports = {
     node: true
   },
   extends: [
-    'plugin:vue/essential', 
-    '@vue/prettier', 
+    'plugin:vue/essential',
+    '@vue/prettier',
     '@vue/typescript'
   ],
   rules: {
+    // default
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-trailing-spaces': 'error',
+    'comma-dangle': ['error', 'never'],
+
+    // prettier
     'prettier/prettier': [{
       singleQuote: true
     }],
+
+    // vue
     "vue/script-indent": ["error", 2, {
       "baseIndent": 1
     }],
