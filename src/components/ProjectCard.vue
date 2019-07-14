@@ -1,11 +1,10 @@
 <template>
-  <div class="project-card">
-
-    <a class="project-card__link" :href="url" target="_blank" rel="noopener nofollow" :style="{ 'background-color': computedBackgroundColor }">
+  <a class="project-card" :href="url" target="_blank" rel="noopener nofollow">
+    <div class="project-card__link" :style="{ 'background-color': computedBackgroundColor }">
       <img class="project-card__logo" :src="fetchedImage" :alt="`${projectName} logo`" />
-    </a>
-    <a class="project-card__name" :href="url" target="_blank" rel="noopener nofollow">{{this.projectName}}</a>
-  </div>
+    </div>
+    <span class="project-card__name">{{this.projectName}}</span>
+  </a>
 </template>
 
 
@@ -52,10 +51,10 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5rem;
+    text-decoration: none;
   }
 
   .project-card__name {
-    text-decoration: none;
     text-align: center;
     margin-top: 0.5rem;
     font-family: var(--project-card-font-family);
