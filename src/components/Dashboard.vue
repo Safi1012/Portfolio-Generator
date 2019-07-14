@@ -50,7 +50,7 @@
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    margin: 70px 1rem;
+    margin: 3rem 1rem;
     padding: 2rem 0;
   }
 
@@ -99,7 +99,7 @@
       grid-template-columns: repeat(12, 1fr);
       grid-gap: 2.5rem 1.5rem;
       align-content: center;
-      margin: 70px auto;
+      margin: 3rem auto;
       max-width: 270px;
     }
 

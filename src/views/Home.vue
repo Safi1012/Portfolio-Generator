@@ -19,3 +19,12 @@
   })
   export default class Home extends Vue {}
 </script>
+
+
+<style lang="scss" scoped>
+  @media (min-width: 576px) {
+    .home {
+      margin-bottom: 10rem;
+    }
+  }
+</style>

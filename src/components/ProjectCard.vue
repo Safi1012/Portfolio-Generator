@@ -123,5 +123,10 @@
       width: 100%;
       height: auto;
     }
+
+    .project-card__link {
+      width: 100%;
+      height: auto;
+    }
   }
 </style>
