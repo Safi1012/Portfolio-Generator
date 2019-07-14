@@ -2,10 +2,14 @@
   <div class="footer">
     <nav>
       <ul>
+        <!-- TODO: only display if configured in setup.yml -->
         <li>Terms</li>
         <li>|</li>
+
+        <!-- TODO: only display if configured in setup.yml -->
         <li>Privacy</li>
         <li>|</li>
+
         <li>Credits</li>
       </ul>
     </nav>

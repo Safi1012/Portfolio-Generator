@@ -3,6 +3,7 @@
     <router-view />
     <Patterns v-if="backgroundType === 'pattern'" />
     <Gradient v-else />
+    <Footer />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator';
   import { mapState, mapGetters } from 'vuex';
+  import Footer from '@/components/Footer.vue';
   import Patterns from '@/components/Patterns.vue';
   import Gradient from '@/components/Gradient.vue';
 
   @Component({
     components: {
       Patterns,
-      Gradient
+      Gradient,
+      Footer
     },
     computed: mapState([
       'theme',

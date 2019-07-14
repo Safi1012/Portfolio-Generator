@@ -47,7 +47,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 0;
+    z-index: -1;
     background-color: var(--pattern-color);
   }
 </style>
