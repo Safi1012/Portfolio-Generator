@@ -1,8 +1,11 @@
 <template>
   <div id="app">
-    <router-view />
-    <Patterns v-if="backgroundType === 'pattern'" />
-    <Gradient v-else />
+    <Header />
+    <div>
+      <router-view />
+      <Patterns v-if="backgroundType === 'pattern'" />
+      <Gradient v-else />
+    </div>
     <Footer />
   </div>
 </template>
@@ -14,12 +17,14 @@
   import Footer from '@/components/Footer.vue';
   import Patterns from '@/components/Patterns.vue';
   import Gradient from '@/components/Gradient.vue';
+  import Header from '@/components/Header.vue';
 
   @Component({
     components: {
+      Header,
+      Footer,
       Patterns,
-      Gradient,
-      Footer
+      Gradient
     },
     computed: mapState([
       'theme',
