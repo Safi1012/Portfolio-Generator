@@ -1,13 +1,11 @@
 <template>
   <nav class="footer">
     <ul class="footer__list">
-      <!-- TODO: only display if configured in setup.yml -->
-      <li><router-link to="/terms" class="footer__link">Terms</router-link></li>
-      <li class="footer__link--divider">|</li>
+      <li v-if="terms"><router-link to="/terms" class="footer__link">Terms</router-link></li>
+      <li v-if="terms" class="footer__link--divider">|</li>
 
-      <!-- TODO: only display if configured in setup.yml -->
-      <li><router-link to="/privacy" class="footer__link">Privacy</router-link></li>
-      <li class="footer__link--divider">|</li>
+      <li v-if="privacy"><router-link to="/privacy" class="footer__link">Privacy</router-link></li>
+      <li v-if="privacy" class="footer__link--divider">|</li>
 
       <li><router-link to="/credits" class="footer__link">Credits</router-link></li>
     </ul>
@@ -18,19 +16,28 @@
 <script lang="ts">
   import { Component, Prop, Vue } from 'vue-property-decorator'
   import { mapState } from 'vuex'
-  import Terms from '@/views/Terms.vue';
-  import Privacy from '@/views/Privacy.vue';
+
+  interface Terms {
+    name: string;
+    website: string;
+  }
+
+  interface Privacy {
+    name: string;
+    address: string;
+    contact: string;
+  }
 
   @Component({
-    components: {
-      Terms,
-      Privacy
-    },
     computed: mapState([
-      // TODO
+      'terms',
+      'privacy'
     ])
   })
-  export default class Footer extends Vue {}
+  export default class Footer extends Vue {
+    public terms!: Terms;
+    public privacy!: Privacy;
+  }
 </script>
 
 

@@ -24,8 +24,7 @@ const routes = [
   }
 ]
 
-// TODO: update condition
-if (config.theme === 'light') {
+if (config.terms) {
   routes.push({
     path: '/terms',
     name: 'terms',
@@ -33,8 +32,7 @@ if (config.theme === 'light') {
   })
 }
 
-// TODO: update condition
-if (config.theme === 'light') {
+if (config.privacy) {
   routes.push({
     path: '/privacy',
     name: 'privacy',
