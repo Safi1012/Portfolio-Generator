@@ -1,8 +1,14 @@
 <template>
-  <ul class="header" :style=" { 'top': currentScrollPosition } ">
-    <li class="header__list" v-for="(social, index) in socialMedia" :key="index">
+  <ul class="header" :class="{ 'header--home': this.$route.path !== '/' }" :style=" { 'top': currentScrollPosition } ">
+    <li class="header__list" v-if="this.$route.path !== '/'">
+      <router-link to="/" class="header__link" aria-label="home">
+        <div class="header__icon" :style="{ 'mask-image': 'url(assets/logo/showroom.svg)' }" />
+      </router-link>
+    </li>
+
+    <li class="header__list" v-for="(social, index) in getSocialMediaData()" :key="index">
       <a class="header__link" :href="social['url']" target="_blank" rel="noopener nofollow" :aria-label="social['name']">
-        <div class="header__icon" :style="{ 'mask-image': getCSSImageURL(social['image']) }" />
+        <div class="header__icon" :style="{ 'mask-image': getSocialMediaImageURL(social['image']) }" />
       </a>
     </li>
   </ul>
@@ -28,8 +34,12 @@
     public socialMedia!: [SocialMedia];
     private currentScrollPosition = '0px';
 
-    getCSSImageURL(image: string) {
+    getSocialMediaImageURL(image: string) {
       return `url(assets/images/social-media/${image})`;
+    }
+
+    getSocialMediaData() {
+      return this.$route.path === '/' ? this.socialMedia : [];
     }
 
     onScroll() {
@@ -73,6 +83,10 @@
 
   .header__list:last-child {
     margin-right: 2.5rem;
+  }
+
+  .header--home {
+    justify-content: flex-start;
   }
 
   .svg-icon {
