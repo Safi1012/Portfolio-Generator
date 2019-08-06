@@ -1,8 +1,10 @@
 <template>
   <a class="project-card" :href="url" target="_blank" rel="noopener nofollow">
-    <div class="project-card__link" :style="{ 'background-color': computedBackgroundColor }">
-      <img class="project-card__logo" :src="fetchedImage" :alt="`${projectName} logo`" />
-    </div>
+    <img class="project-card__logo"
+         :src="fetchedImage"
+         :alt="`${projectName} logo`"
+         :style="{ 'background-color': computedBackgroundColor }"
+    />
     <span class="project-card__name">{{this.projectName}}</span>
   </a>
 </template>
@@ -75,13 +77,6 @@
     box-shadow: 0 14px 28px var(--project-card-shadow-color), 0 10px 10px var(--project-card-shadow-color);
   }
 
-  .project-card__link {
-    text-decoration: none;
-    border-radius: 1rem;
-    width: 6rem;
-    height: 6rem;
-  }
-
   @media (min-width: 620px) {
     .project-card {
       width: 8.5rem;
@@ -93,8 +88,7 @@
       width: 9.5rem;
     }
 
-    .project-card__logo,
-    .project-card__link {
+    .project-card__logo {
       width: 6.5rem;
       height: 6.5rem;
     }
@@ -105,8 +99,7 @@
       width: 10rem;
     }
 
-    .project-card__logo,
-    .project-card__link {
+    .project-card__logo {
       width: 7rem;
       height: 7rem;
     }
@@ -120,11 +113,6 @@
     }
 
     .project-card__logo {
-      width: 100%;
-      height: auto;
-    }
-
-    .project-card__link {
       width: 100%;
       height: auto;
     }

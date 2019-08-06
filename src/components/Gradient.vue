@@ -49,6 +49,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: -1;
 
     background: var(--gradient-start-color);  /* fallback for old browsers */
     background: -webkit-linear-gradient(var(--gradient-direction), var(--gradient-start-color), var(--gradient-end-color));  /* Chrome 10-25, Safari 5.1-6 */
