@@ -43,6 +43,7 @@
 
 
 <style lang="scss">
+  @import './styles/typography.css';
   @import './styles/themes.css';
 
   * {
