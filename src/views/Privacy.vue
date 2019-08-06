@@ -106,7 +106,7 @@
   .privacy {
     max-width: 60ch;
     margin: 5rem 2rem;
-    font-family: var(--project-card-font-family); // TODO: create variable
+    font-family: var(--project-card-font-family);
     color: var(--footer-text-color);
   }
 
