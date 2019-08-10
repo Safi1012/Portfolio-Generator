@@ -1,6 +1,7 @@
 portfolio: Filipe's Portfolio
 
 theme: light
+patternImage: circuit.svg
 
 socialMedia:
   - name: GitHub
@@ -51,13 +52,6 @@ projects:
     url: https://github.com/Safi1012/Piclet
     image: piclet.png
     backgroundColor: FFF
-
-# 
-# possible options: 'pattern' and 'gradient'
-# 
-backgroundType: pattern
-
-patternImage: circuit.svg
 
 # optional
 terms:

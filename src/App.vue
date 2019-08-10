@@ -3,7 +3,7 @@
     <Header />
     <div>
       <router-view />
-      <Patterns v-if="backgroundType === 'pattern'" />
+      <Patterns v-if="patternImage" />
       <Gradient v-else />
     </div>
     <Footer />
@@ -28,12 +28,12 @@
     },
     computed: mapState([
       'theme',
-      'backgroundType'
+      'patternImage'
     ])
   })
   export default class App extends Vue {
     public theme!: string;
-    public backgroundType!: string;
+    public patternImage!: string;
 
     mounted() {
       document.body.classList.add(this.theme);
