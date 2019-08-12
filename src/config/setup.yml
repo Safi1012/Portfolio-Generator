@@ -1,37 +1,51 @@
-portfolio: Your Name
+portfolio: Filipe Santos Correa
 
 theme: light
 patternImage: circuit.svg
 
 socialMedia:
   - name: GitHub
-    url: https://github.com/
+    url: https://github.com/safi1012
     image: github.svg
 
   - name: Twitter
-    url: https://twitter.com/
+    url: https://twitter.com/safi1012
     image: twitter.svg
 
 projects:
-  - name: About Me
-    url: https://filipesantoscorrea.com/
-    image: about-me.svg
-
-  - name: Snake
-    url: https://safi1012.github.io/ResponsiveSnake/
-    image: responsive-snake.png
-
   - name: Shrink Me
     url: https://shrinkme.app
     image: shrink-me.svg
-    backgroundColor: \#fefefe
+
+  - name: Snake
+    url: https://safi1012.github.io/ResponsiveSnake
+    image: responsive-snake.png
+
+  - name: About Me
+    url: https://filipesantoscorrea.com
+    image: about-me.svg
+
+  - name: Portfolio
+    url: https://crafted.link
+    image: portfolio.png
+
+  - name: Daily UI
+    url: https://www.behance.net/gallery/57148087/Daily-UI
+    image: dailyUI.png
+
+  - name: Bitcoin
+    url: https://github.com/Safi1012/bitcoin
+    image: bitcoin.png
+
+  - name: Piclet
+    url: https://github.com/Safi1012/Piclet
+    image: piclet.png
 
 terms:
-  name: 'Your name'
-  website: 'https://crafted.link'
+  name: Filipe Santos Correa
+  website: https://crafted.link
 
 privacy:
-  name: 'Your name'
-  address: 'Your address'
-  mail: 'your-mail@address.com'
-  phone: 'Your number e.g. +1-123-456-7890'
+  name: Filipe Santos Correa
+  address: 76137 Karlsruhe, Germany
+  mail: mail@filipesantoscorrea.com
