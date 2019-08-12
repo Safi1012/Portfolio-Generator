@@ -148,14 +148,14 @@ projects:
     image: about-me.svg
 
 terms:
-  name: 'Filipe Santos Correa'
-  website: 'https://crafted.link'
+  name: Filipe Santos Correa
+  website: https://crafted.link
 
 privacy:
-  name: 'Filipe Santos Correa'
-  address: 'Karlsruhe, Germany'
-  mail: 'mail@filipesantoscorrea.com'
-  phone: '+1-123-456-7890'
+  name: Filipe Santos Correa
+  address: Karlsruhe, Germany
+  mail: mail@filipesantoscorrea.com
+  phone: +1-123-456-7890
 ```
 
 

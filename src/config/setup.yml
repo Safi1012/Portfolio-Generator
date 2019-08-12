@@ -27,11 +27,11 @@ projects:
     backgroundColor: \#fefefe
 
 terms:
-  name: 'Your name'
-  website: 'https://crafted.link'
+  name: Your name
+  website: https://crafted.link
 
 privacy:
-  name: 'Your name'
-  address: 'Your address'
-  mail: 'your-mail@address.com'
-  phone: 'Your number e.g. +1-123-456-7890'
+  name: Your name
+  address: Your address
+  mail: your-mail@address.com
+  phone: Your number e.g. +1-123-456-7890
