@@ -1,2 +1,5 @@
-User-agent: *
-Disallow:
+User-Agent: *
+Allow: /
+Disallow: /terms
+Disallow: /privacy
+Disallow: /credits
