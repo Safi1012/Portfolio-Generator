@@ -1,59 +1,31 @@
-portfolio: Filipe's Portfolio
+portfolio: Your Name
 
 theme: light
 patternImage: circuit.svg
 
 socialMedia:
   - name: GitHub
-    url: https://github.com/Safi1012
+    url: https://github.com/
     image: github.svg
 
   - name: Twitter
-    url: https://twitter.com/Safi1012
+    url: https://twitter.com/
     image: twitter.svg
 
 projects:
-  - name: Shrink Me
-    url: https://shrinkme.app
-    image: shrink-me.svg
-    backgroundColor: FFF
+  - name: About Me
+    url: https://filipesantoscorrea.com/
+    image: about-me.svg
 
   - name: Snake
     url: https://safi1012.github.io/ResponsiveSnake/
     image: responsive-snake.png
-    backgroundColor: FFF
 
-  - name: About Me
-    url: https://filipesantoscorrea.com/
-    image: about-me.svg
-    backgroundColor: FFF
+  - name: Shrink Me
+    url: https://shrinkme.app
+    image: shrink-me.svg
+    backgroundColor: \#fefefe
 
-  - name: Portfolio
-    url: 
-    image: portfolio.png
-    backgroundColor: FFF
-
-  - name: Copy2me
-    url: https://github.com/Safi1012/copy2me
-    image: copy2me.png
-    backgroundColor: FFF
-
-  - name: Daily UI
-    url: https://www.behance.net/gallery/57148087/Daily-UI
-    image: dailyUI.png
-    backgroundColor: FFF
-
-  - name: Bitcoin
-    url: https://github.com/Safi1012/bitcoin
-    image: bitcoin.png
-    backgroundColor: FFF
-
-  - name: Piclet
-    url: https://github.com/Safi1012/Piclet
-    image: piclet.png
-    backgroundColor: FFF
-
-# optional
 terms:
   name: 'Your name'
   website: 'https://crafted.link'
