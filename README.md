@@ -14,7 +14,7 @@
 
 
 ## Motivation
-I created this _Portfolio Generator_ to satisfy the need to display my own projects in an easy and beautiful way. You can see my own generated portfolio here: [https://crafted.link](https://crafted.link).
+I created this _Portfolio Generator_ to satisfy the need to display my own projects in an easy and beautiful way. You can see my own generated portfolio here: [https://crafted.link/](https://crafted.link/).
 
 
 <br>
@@ -48,7 +48,7 @@ Here you can see four demo portfolios which were created by using this portfolio
 What makes this project stand out, are the easy and yet powerful options to generate a personalized portfolio. This project offers the following features:
 
 - Custom themes
-- Pre-configured Themes (daynight, light, ocean, and dark)
+- Pre-configured themes (daynight, light, ocean, and dark)
 - Gradient and patterns option
 - Top Lighthouse score
 - Custom font support
@@ -83,7 +83,7 @@ npm run serve
 
 #### 4. Add Your Own Portofolio Data.
 
-> Checkout the API reference section further below for more information.
+> Open the `./src/config/setup.yml` file and adjust the settings to fit your needs. Checkout the [API Reference](#api-reference) section further below for more information.
 
 
 #### 5. Build Production
@@ -93,7 +93,7 @@ npm run build
 
 #### 6. Deploy Your Production Build
 
-> Deploy your generated production build folder ```dist/``` to your favorite hosting provider. Some of the better known are: [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), [Zeit Now](https://zeit.co/now), and [Surge](https://surge.sh/). If you need help to deploy your site, detailed explanations can be found in the docs of the respective hosting provider.
+> Deploy your generated production build folder ```dist/``` to your favorite hosting provider. Some of the better known are: [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), [Zeit Now](https://zeit.co/now), and [Surge](https://surge.sh/). Detailed explanations on how to deploy a static site can be found in the docs of the respective hosting provider.
 
 
 <br>
@@ -101,16 +101,16 @@ npm run build
 
 ## API Reference
 
-You configure the whole project by adjusting the `./src/config/setup.yml` file. In the following you see what each option means and does:
+The portfolio generator can be configured by adjusting the `./src/config/setup.yml` file. Below you see what each option means and does:
 
 
 | Parameter           | Explanation                                                                                                                                                                    | Input Type        | Required                                                                             |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- | ----------------------------------------------------------------------------------- |
 | `portfolio`           | Specifies the title of the generated portfolio.                                                                                                                                 | string            | yes                                                                                |
-| `theme`               | The theme name which should be applied. Currently there are four themes available (`daynight`, `light`, `ocean`, and `dark`). <br><br> You can also create your own theme! Have a look at the section _Create Your Own Theme_. | string            | yes  |
-| `patternImage`        | Choose which pattern image should be applied to your background. You can select one of the 26 included images under `./public/assets/images/patterns/`. <br><br>A complete list of available pattern images can be found further below. Just choose an image and enter its filename e.g. `circuit.svg`. If you leave this field empty you will get a gradient as background. The gradient colors are taken from the selected theme. | string | optional |
-| `socialMedia`           | Defines the social media icons to show up in your header. Each entry consists of `name`, `url`, and `image`. <br><br> - `name` will be used as aria-label on the icon to increase the accessibility. <br> - `url` link to your social media profile (e.g. GitHub, Twitter). <br> - `image` specifies which social media icon to display. Just enter the icons filename, e.g. `github.svg`. Remember to first add your icon to `./public/assets/images/social-media/` or select one of the already included icons.                                                                                                                              | array            | yes  |
-| `projects`           | Add your own projects. Each entry consists of `name`, `url`, `backgroundColor`, and `image`. <br><br> - `name` will appear below the image. <br> - `url` link to your project. <br> - `backgroundColor` hex color without the '#' hashtag sign. The color will only take effect if you use an alpha transparent image.<br> - `image` defines the projects logo. Just enter the images name with its extension, e.g. `shrink-me.svg`. Remember to first add your image to `./public/assets/images/projects/`.                                                                                                                            | array            | yes  | 
+| `theme`               | The theme name which should be applied. Currently there are four themes available (`daynight`, `light`, `ocean`, and `dark`). <br><br> You can also [Create Your Own Theme](#create-your-own-theme)! | string            | yes  |
+| `patternImage`        | Choose which pattern image should be applied to your background. You can select one of the 26 included images under `./public/assets/images/patterns/`. <br><br>A list of all available [pattern images](#patterns) can be found further below. Just choose an image and enter its filename e.g. `circuit.svg`. If you leave this field empty you will get a gradient as background. The gradient colors are taken from the selected theme. | string | optional |
+| `socialMedia`           | Defines the social media icons to show up in your header. Each entry consists of `name`, `url`, and `image`. <br><br> - `name` will be used as _aria-label_ on the icon to increase the accessibility of the generated site. <br> - `url` link to your social media profile (e.g. GitHub, Twitter). <br> - `image` specifies which social media icon to display. Just enter the icons filename, e.g. `github.svg`. Remember to first add your icon to `./public/assets/images/social-media/` or select one of the already included [Social-Media icons](#social-media).                                                                                                                              | array            | yes  |
+| `projects`           | Add your own projects. Each entry consists of `name`, `url`, `backgroundColor`, and `image`. <br><br> - `name` will appear below the image. <br> - `url` link to your project. <br> - `backgroundColor` hex color without the '#' hashtag sign. The `backgroundColor` is optional because it will only take effect if you use an alpha transparent image.<br> - `image` defines the projects logo. Just enter the images name with its extension, e.g. `shrink-me.svg`. Remember to first add your image to `./public/assets/images/projects/`.                                                                                                                            | array            | yes  | 
 | `terms`           | If you want / need that your portfolio site contains a terms of service page, you can pass the `name` and `website` parameter to the `terms` object. If left empty, no terms page will be generated. You may also edit the `./src/views/Terms.vue` file to contain your own self written terms.  | string            | optional  |
 | `privacy`           | If you want / need that your portfolio site contains a privacy page, you can pass the `name`, `address`, `mail`, and `phone` parameter to the `privacy` object. If left empty, no privacy page will be generated. You may also edit the `./src/views/Privacy.vue` file to contain your own self written privacy.  | string            | optional  |
 
@@ -163,7 +163,7 @@ privacy:
 <br>
 
 
-## List of Patterns and Social-Media
+## List of Patterns and Social-Media icons 
 
 Here you see a list of already provided patterns and social-media icons to choose from when configuring the `./src/config/setup.yml` file:
 
@@ -186,7 +186,7 @@ facebook.svg | github.svg | gitlab.svg | linkedin.svg | twitter.svg | xing.svg
 
 ## SEO Configuration
 
-You should also adjust your sites meta data (important for SEO) before deploying your portfolio site. This can be done by adjusting the options in the `.env` (located in the root folder) file:
+You should also adjust your sites meta data (important for SEO) before deploying your portfolio site. This can be done by adjusting the options in the `.env` file (located in the root folder):
 
 ```js
 #
@@ -204,7 +204,7 @@ VUE_APP_CANONICAL_SITE = "https://..."
 
 ## Create Your Own Theme
 
-You can also create your own individual theme. Just open the `./src/styles/themes.css` file and create a new CSS class e.g. `.rainbow`. Next, copy the contents of an already existing theme and paste it inside of your newly created CSS class `.rainbow`. Now you can adjust the settings of your theme (colors and font options) to fit your needs. Finally, open the `./src/config/setup.yml` and load your new theme `rainbow` by adjusting the `theme` parameter.
+You can also create your own individual theme. Just open the `./src/styles/themes.css` file and create a new CSS class e.g. `.rainbow`. Next, copy the contents of an already existing theme and paste it inside of your newly created CSS class `.rainbow`. Now you can adjust the settings of your theme (colors and fonts) to fit your needs. Finally, open the `./src/config/setup.yml` and load your new theme `rainbow` by adjusting the `theme` parameter.
 
 PS: I'm always happy to receive pull requests with new themes 🤗
 
@@ -225,6 +225,14 @@ One service which I highly recommend using when using Google Fonts is the [googl
 ## Contribute
 
 Just submit an issue, be it a bug report or a feature request. I'm also always happy to accept new pull requests.
+
+
+<br>
+
+
+## Credits
+
+This project uses Open Source components. I acknowledge and am grateful to these developers and designers for their contributions to the open source community!
 
 
 <br>
