@@ -110,7 +110,7 @@ The portfolio generator can be configured by adjusting the `./src/config/setup.y
 | `theme`               | The theme name which should be applied. Currently there are four themes available (`daynight`, `light`, `ocean`, and `dark`). <br><br> You can also [Create Your Own Theme](#create-your-own-theme)! | string            | yes  |
 | `patternImage`        | Choose which pattern image should be applied to your background. You can select one of the 26 included images under `./public/assets/images/patterns/`. <br><br>A list of all available [pattern images](#patterns) can be found further below. Just choose an image and enter its filename e.g. `circuit.svg`. If you leave this field empty you will get a gradient as background. The gradient colors are taken from the selected theme. | string | optional |
 | `socialMedia`           | Defines the social media icons to show up in your header. Each entry consists of `name`, `url`, and `image`. <br><br> - `name` will be used as _aria-label_ on the icon to increase the accessibility of the generated site. <br> - `url` link to your social media profile (e.g. GitHub, Twitter). <br> - `image` specifies which social media icon to display. Just enter the icons filename, e.g. `github.svg`. Remember to first add your icon to `./public/assets/images/social-media/` or select one of the already included [Social-Media icons](#social-media).                                                                                                                              | array            | yes  |
-| `projects`           | Add your own projects. Each entry consists of `name`, `url`, `backgroundColor`, and `image`. <br><br> - `name` will appear below the image. <br> - `url` link to your project. <br> - `backgroundColor` hex color without the '#' hashtag sign. The `backgroundColor` is optional because it will only take effect if you use an alpha transparent image.<br> - `image` defines the projects logo. Just enter the images name with its extension, e.g. `shrink-me.svg`. Remember to first add your image to `./public/assets/images/projects/`.                                                                                                                            | array            | yes  | 
+| `projects`           | Add your own projects. Each entry consists of `name`, `url`, `backgroundColor`, and `image`. <br><br> - `name` will appear below the image. <br> - `url` link to your project. <br> - `backgroundColor` hex color with a prefixed backlash, for example `\#2BB0ED`. The `backgroundColor` is optional because it will only take effect if you use an alpha transparent image.<br> - `image` defines the projects logo. Just enter the images name with its extension, e.g. `shrink-me.svg`. Remember to first add your image to `./public/assets/images/projects/`.                                                                                                                            | array            | yes  | 
 | `terms`           | If you want / need that your portfolio site contains a terms of service page, you can pass the `name` and `website` parameter to the `terms` object. If left empty, no terms page will be generated. You may also edit the `./src/views/Terms.vue` file to contain your own self written terms.  | string            | optional  |
 | `privacy`           | If you want / need that your portfolio site contains a privacy page, you can pass the `name`, `address`, `mail`, and `phone` parameter to the `privacy` object. If left empty, no privacy page will be generated. You may also edit the `./src/views/Privacy.vue` file to contain your own self written privacy.  | string            | optional  |
 
@@ -141,12 +141,11 @@ projects:
   - name: Shrink Me
     url: https://shrinkme.app
     image: shrink-me.svg
-    backgroundColor: FFF
+    backgroundColor: \#FEFEFE
 
   - name: About Me
-    url: https://filipesantoscorrea.com/
+    url: https://filipesantoscorrea.com
     image: about-me.svg
-    backgroundColor: 4A4A4A
 
 terms:
   name: 'Filipe Santos Correa'
