@@ -14,7 +14,7 @@
 
 
 ## Motivation
-I created this _Portfolio Generator_ to satisfy the need to display my own projects in an easy and beautiful way. You can see my own generated portfolio here: [https://crafted.link/](https://crafted.link/).
+I created this _Portfolio Generator_ to satisfy the need to display my own projects in an easy and beautiful way. You can see my own generated portfolio here: [https://crafted-link.netlify.app/](https://crafted-link.netlify.app/).
 
 
 <br>
@@ -149,7 +149,7 @@ projects:
 
 terms:
   name: Filipe Santos Correa
-  website: https://crafted.link
+  website: https://crafted-link.netlify.app
 
 privacy:
   name: Filipe Santos Correa
